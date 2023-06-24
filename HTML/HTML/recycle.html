@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycle</title>
+  <link rel="stylesheet" href="style_community.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class=communitybg>
+  <nav id="navbar" class="banner">
+    <a class="gen-home" href="homepage 2.html">GenreQuest</a>
+    <div class="dropdown">
+      <button class="dropbtn">Genres
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="column">
+          <a href="#">Action</a>
+          <a href="#">Adventure</a>
+          <a href="#">Comedy</a>
+          <a href="#">Drama</a>
+          <a href="#">Fantasy</a>
+          <a href="#">Horror</a>
+        </div>
+        <div class="column">
+          <a href="#">Mystery</a>
+          <a href="#">Romance</a>
+          <a href="#">Science Fiction</a>
+          <a href="#">Thriller</a>
+          <a href="#">Western</a>
+          <a href="#">Psychological</a>
+        </div>
+
+      </div>
+    </div>
+    <ul class="banner-ul">
+      <li><a id="com" href="community.html">Community</a> </li>
+      <li><a id="aud" href="audio.html">AudioBooks</a> </li>
+      <li><a id="sup" href="help.html">Support</a> </li>
+    </ul>
+  </nav>
+  <div class="headingrecycle">
+    <h2>Recycle Books</h2>
+  </div>
+  <div class="descriptionrecycle">
+    <p>
+      Join us in our mission to promote sustainability and give your old books a new lease on life through our book
+      recycling program. Instead of letting your gently used books collect dust, donate them to our platform where they
+      can find a new home and be enjoyed by other book lovers. Together, let's reduce our carbon footprint and support a
+      circular economy for books.
+    </p>
+    <img src="recycle_container.png" alt="" width="650" class="recycle_container">
+
+  </div>
+  <form action="/action_page.php">
+
+    <div class="input-container">
+
+      <input class="input-field" type="text" placeholder="BookName" name="bookname">
+    </div>
+
+    <div class="input-container">
+
+      <input class="input-field" type="text" placeholder="Email" name="email">
+    </div>
+
+
+    <div class="input-container">
+
+      <input class="input-field" type="Address" placeholder="Address" name="addy">
+    </div>
+    <div class="input-container">
+      <label class="price_range" for="country">Price Range : </label>
+      <select id="country" name="country">
+        <option value="australia">Under ₹499</option>
+        <option value="canada">₹500 - ₹1000</option>
+        <option value="usa">₹1000 - ₹1500</option>
+        <option value="usa">₹1500 - ₹2000</option>
+        <option value="usa">₹2000 +</option>
+      </select>
+
+    </div>
+    <button type="submit" class="btn">Recycle ♻️ </button>
+    <h2 class="recycle_heading">Donate Some Books for Recycling!</h2>
+  </form>

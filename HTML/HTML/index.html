@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GenreQuest</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js">
+    </script> -->
+
+</head>
+
+<body>
+    <div id="para">
+        <div id="scene">
+            <!-- <div class="layer" data-dept="0.10"><img src="bg1.png"></div> -->
+            <div class="layer" data-depth="0.20" style="margin-left: -100px;"><img src="2.png">
+            </div>
+            <div class="layer" data-depth="0.30" style="margin-left: -100px;"><img src="3.png"></div>
+            <div class="layer" data-depth="0.40" style="margin-left: -100px;"><img src="4.png"></div>
+            <div class="layer" data-depth="0.50" style="margin-left: -100px; margin-top: 35px;"><img src="5.png">
+            </div>
+            <div class="layer" data-depth="0.60" style="margin-top:-20px; padding-left: 50%;"><img src="6.png">
+            </div>
+            <div class="layer" id="bookclosed" data-depth="0.90"
+                style="margin-left: 49%; margin-top: 15%; transform: (-50%,-50%);"><img id="bookimg"
+                    onclick="changeImage()" src="Asset 1.png">
+                <div id="turn" style="display:none; ">
+                    <input type="checkbox" id="c1">
+                    <input type="checkbox" id="c2">
+                    <input type="checkbox" id="c3">
+                    <div class="flip-book">
+                        <div class="flip" id="p1">
+                            <div class="back">
+                                <img id="backshelf" src="backshelf.png">
+                                <label class="back-btn" for="c1">Back</label>
+                                <ul class="p1bul">
+                                    <li><button type="button">Action</button></li>
+                                    <li><button type="button">Adventure</button></li>
+                                    <li><button type="button">Comedy</button></li>
+                                    <li><button type="button">Drama</button></li>
+                                </ul>
+                            </div>
+                            <div class="front">
+                                <!-- <img id="frontshelf" src="frontshelf.png"> -->
+                                <label style="color:#003720; font-weight: bolder; " class="next-btn"
+                                    for="c1">Next</label>
+                                <p4>
+                                    <center>Get ready to<br>
+                                        discover your next<br>
+                                        favourite book!</center>
+                                </p4>
+                            </div>
+                        </div>
+                        <div class="flip" id="p2">
+                            <div class="back">
+                                <img id="backshelf" src="backshelf.png">
+                                <label class="back-btn" for="c2">Back</label>
+                                <ul class="p2bul">
+                                    <li><button type="button">Fantasy</button></li>
+                                    <li><button type="button">Horror</button></li>
+                                    <li><button type="button">Mystery</button></li>
+                                    <li><button type="button">Romance</button></li>
+                                </ul>
+                            </div>
+                            <div class="front">
+                                <img id="frontshelf" src="frontshelf.png">
+                                <label class="next-btn" for="c2">Next</label>
+                            </div>
+                            <ul class="p2ful">
+                                <li><button type="button">Sci-fi</button></li>
+                                <li><button type="button">Thriller</button></li>
+                                <li><button type="button">Western</button></li>
+                                <li><button type="button">Psychological</button></li>
+                            </ul>
+                        </div>
+                        <div class="flip" id="p3">
+                            <div class="back">
+                                <label style="color:#003720; font-weight: bolder;" class="back-btn"
+                                    for="c3">Back</label>
+                                <p1>
+                                    <center>GenreQuest<br><br></center>
+                                </p1>
+                                <p2>
+                                    <center>Customized reading at your fingertips - we have your favourite<br>
+                                        genres covered!</center>
+                                </p2>
+                                <a class="signin" href="login.html">Sign Up</a>
+                                <img id="p3img" src="pciturep3.png">
+                            </div>
+                            <div class="front">
+                                <img id="frontshelf" src="frontshelf.png">
+                                <label class="next-btn" for="c3">Next</label>
+                                <ul class="p3ful">
+                                    <li><button type="button">Poetry</button></li>
+                                    <li><button type="button">History</button></li>
+                                    <li><button type="button">Biography</button></li>
+                                    <li><button type="button">Auto-<br>Biography</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tohome">
+                            <a href="homepage 2.html">Explore!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./parallax.js"></script>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support</title>
+    <link rel="stylesheet" href="style_community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-SJYZpwvUCaKj9OUb70I6irLZ6Uvdc6W1m6+IyDTBmK0c0e6WQ2Qs/RlLd+2ad/M1xp4W4iNqfEduq1gqOJeF6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #e3e4e8;
+            --fg: #FFDC8A;
+            --input: #ffffff;
+            --primary: #FFDC8A;
+            --dur: 1s;
+            font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1280 - 320));
+        }
+
+        form,
+        input,
+        .caret {
+            margin: auto;
+            position: absolute;
+
+
+        }
+
+        form {
+            position: relative;
+            bottom: 30vh;
+            left: 6vh;
+            width: 100%;
+            max-width: 17em;
+
+        }
+
+        input,
+        .caret {
+            display: block;
+            transition: all calc(var(--dur) * 0.5) linear;
+        }
+
+        input {
+            background: transparent;
+            position: absolute;
+            bottom: 0;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0.25em inset;
+            caret-color: var(--primary);
+            width: 2em;
+            height: 2em;
+            font-family: 'Open Sans';
+            color: #040404;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        input:focus,
+        input:valid {
+            background: var(--input);
+            border-radius: 0.25em;
+            box-shadow: none;
+            padding: 0.75em 3em;
+            transition-duration: calc(var(--dur) * 0.25);
+            transition-delay: calc(var(--dur) * 0.25);
+            width: 100%;
+            height: 3em;
+        }
+
+        input:focus {
+            animation: showCaret var(--dur) steps(1);
+            outline: transparent;
+        }
+
+        input:focus+.caret,
+        input:valid+.caret {
+            animation: handleToCaret var(--dur) linear;
+            background: transparent;
+            width: 1px;
+            height: 1.5em;
+            transform: translate(0, -1em) rotate(-180deg) translate(7.5em, -0.25em);
+        }
+
+        input::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        label {
+            color: #e3e4e8;
+            overflow: hidden;
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+
+        .caret {
+            position: absolute;
+            color: black;
+            top: 0.5vh;
+            background: currentColor;
+            border-radius: 0 0 0.125em 0.125em;
+            margin-bottom: -0.6em;
+            width: 0.25em;
+            height: 1em;
+            transform: translate(0, -1em) rotate(-45deg) translate(0, 0.875em);
+            transform-origin: 50% 0;
+        }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --fg: #e3e4e8;
+                --input: #FFDC8A;
+                ;
+                --primary: #f6eb55;
+            }
+        }
+
+        /* Animations */
+        @keyframes showCaret {
+            from {
+                caret-color: transparent;
+            }
+
+            to {
+                caret-color: var(--primary);
+            }
+        }
+
+        @keyframes handleToCaret {
+            from {
+                background: currentColor;
+                width: 0.25em;
+                height: 1em;
+                transform: translate(0, -1em) rotate(-45deg) translate(0, 0.875em);
+            }
+
+            25% {
+                background: currentColor;
+                width: 0.25em;
+                height: 1em;
+                transform: translate(0, -1em) rotate(-180deg) translate(0, 0.875em);
+            }
+
+            50%,
+            62.5% {
+                background: var(--primary);
+                width: 1px;
+                height: 1.5em;
+                transform: translate(0, -1em) rotate(-180deg) translate(7.5em, 2.5em);
+            }
+
+            75%,
+            99% {
+                background: var(--primary);
+                width: 1px;
+                height: 1.5em;
+                transform: translate(0, -1em) rotate(-180deg) translate(7.5em, -0.25em);
+            }
+
+            87.5% {
+                background: var(--primary);
+                width: 1px;
+                height: 1.5em;
+                transform: translate(0, -1em) rotate(-180deg) translate(7.5em, 0.125em);
+            }
+
+            to {
+                background: transparent;
+                width: 1px;
+                height: 1.5em;
+                transform: translate(0, -1em) rotate(-180deg) translate(7.5em, -0.25em);
+            }
+        }
+    </style>
+
+</head>
+
+<body class=communitybg>
+    <nav id="navbar" class="banner">
+        <a class="gen-home" href="homepage 2.html">GenreQuest</a>
+        <div class="dropdown">
+            <button class="dropbtn">Genres
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div class="column">
+                    <a href="#">Action</a>
+                    <a href="#">Adventure</a>
+                    <a href="#">Comedy</a>
+                    <a href="#">Drama</a>
+                    <a href="#">Fantasy</a>
+                    <a href="#">Horror</a>
+                </div>
+                <div class="column">
+                    <a href="#">Mystery</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Science Fiction</a>
+                    <a href="#">Thriller</a>
+                    <a href="#">Western</a>
+                    <a href="">Psychological</a>
+                </div>
+
+            </div>
+        </div>
+        <ul class="banner-ul">
+            <li><a id="com" href="community.html">Community</a> </li>
+            <li><a id="aud" href="audio.html">AudioBooks</a> </li>
+            <li><a id="sup" href="help.html">Support</a> </li>
+        </ul>
+    </nav>
+    <div class="pfp">
+        <a href="main.html">
+            <img class="profilepic" src="./p1.jpg"
+                style="height:5vh ; width:5vh ;position: fixed; top:1vh;right:2vh;z-index:2; height:7vh;width:7vh;border-radius: 50%;">
+        </a>
+        <img src="help_clipart.png" alt="" width="1200" class="help_clipart">
+        <div class="image1">
+            <img src="helpimage1.png" alt="" width="1000">
+        </div>
+        <a href="">
+            <p class="hlpimgtxt1">If you need help before,during or after your purchase, this is the place to be.</p>
+        </a>
+        <h2 class=helpheading1>Buying and Item Support</h2>
+
+
+        <h2 class="help_text">Hi, how can we help you?</h2>
+        <form>
+            <label for="search">Search</label>
+            <input id="search" type="search" pattern=".*\S.*" required>
+            <span class="caret"></span>
+        </form>
+        <h2 class="below_helpclipart">Browse Help Topics</h2>
+
+        <div class="image2">
+            <img src="./helpimage2.png" alt="">
+        </div>
+        <h2 class=helpheading2>Selling and Being an Author</h2>
+        <a href="">
+            <p class=hlpimgtxt2>Learn all you need to know about selling your items and being an Author on GenreQuest
+            </p>
+        </a>
+        <div class="image3">
+            <img src="./helpimage3.jpg" alt="">
+        </div>
+        <h2 class=helpheading3>Your Account</h2>
+        <a href="">
+            <p class=hlpimgtxt3> Set up your account and keep it safe and sound. </p>
+        </a>
+        <div class="image4">
+            <img src="./helpimage4.png" alt="">
+        </div>
+        <h2 class=helpheading4>Copyright & Trademark</h2>
+        <a href="">
+            <p class=hlpimgtxt4>Find out about Copyright and Trademark protection, what intellectual property is and why
+                it is important to you.</p>
+        </a>
+        <div class="image5">
+            <img src="./helpimage5.png" alt="">
+        </div>
+        <a href="">
+            <p class=hlpimgtxt5> Contact us for any Payment issue, or for information regarding a transaction. </p>
+        </a>
+        <h2 class=helpheading5> Payments & Refund</h2>
+
+
+
+    </div>
+</body>
+
+</html>
