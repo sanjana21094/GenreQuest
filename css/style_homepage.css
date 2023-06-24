@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 220vh;
+    background: linear-gradient(to right top,#ececec,#003720);   
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #003720;
+    /* background-color: rgb(255, 77, 77); */
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.banner-ul {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.banner-ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+.banner-ul li a:hover {
+    color: rgb(113, 113, 113);
+}
+
+.banner-ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+    position: relative;
+}
+
+.banner img {
+    /* z-index: 2; */
+    filter: brightness(1);
+    position: absolute;
+    top: 50%;
+    left: 94%;
+    transform: translateY(-50%);
+    height: 45px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.gen-home {
+    position: relative;
+    left: -5%;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+
+
+.grid-container {
+    position: relative;
+    right: 5%;
+    display: grid;
+    column-gap: 80px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+}
+
+.grid-item4 {
+    grid-column: 2;
+}
+
+.grid-container a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    transition: 0.3s;
+}
+
+.grid-container a:hover {
+    color: rgb(113, 113, 113);
+}
+
+#para {
+    height: 760px;
+    background: #ffffff url(1.png) no-repeat;
+    overflow: hidden;
+}
+
+#bookclosed img {
+    cursor: pointer;
+    height: 40px;
+    transition: 0.2s;
+
+}
+
+#bookclosed img:hover {
+    height: 130px;
+    margin-left: -35%;
+    margin-top: -15%;
+    transform: (50%, 50%);
+}
+
+.book {
+    background-color: #ffffff;
+    width: 200px;
+    height: 300px;
+    perspective: 600px;
+    position: relative;
+}
+
+.book::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+    background-color: #3f564d;
+    transform-origin: center right;
+    transform: rotateY(180deg);
+    transition: 0.7s ease all;
+}
+
+.book:hover::before {
+    transform: rotateY(0deg);
+}
+
+.book .pg {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+.userDash {
+    width:80%;
+    min-height:180vh;
+    position: relative;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    top:20vh;
+    left:10%;
+    display: flex;
+
+    
+
+}
+
+.trendingbooks{
+    position:absolute;
+    top:30vh;
+    left:2vh;
+    font-size: 20px;
+
+}
+
+.book1 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+}
+
+.book2 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:25vh;
+}
+
+.book3 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:50vh;
+
+}
+
+.book4 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:75vh;
+}
+
+.book5 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:100vh;
+}
+
+.book6 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:125vh;
+}
+
+.book7 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:150vh;
+}
+
+.book8 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:175vh;
+}
+
+.toppicks{
+    position: absolute;
+    top:75vh;
+    left:2vh;
+    font-size: 20px;
+
+
+}
+.tbook1 img{
+    position: absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    
+}
+
+.tbook2 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:25vh;
+
+}
+
+.tbook3 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:50vh;
+
+}
+
+.tbook4 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:75vh;
+
+}
+
+.tbook5 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:100vh;
+
+}
+
+.tbook6 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:125vh;
+
+}
+
+.tbook7 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:150vh;
+
+}
+
+.tbook8 img{
+    position:absolute;
+    top:5vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:175vh;
+
+}
+
+.booksforyou{
+    position: absolute;
+    top:120vh;
+    left:2vh;
+    font-size: 20px;
+
+}
+
+.wbook1 img{
+    position:absolute;
+    top:8vh;
+    height:33vh;
+    border-radius: 3vh;
+    transition: transform .5s ;
+
+}
+
+.wbook2 img{
+    position:absolute;
+    top:8vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:25vh;
+    transition: transform .5s ;
+}
+
+.wbook3 img{
+    position:absolute;
+    top:8vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:50vh;
+    transition: transform .5s ;
+}
+
+.wbook4 img{
+    position:absolute;
+    top:8vh;
+    height:33vh;
+    border-radius: 3vh;
+    left:75vh;
+    transition: transform .5s ;
+}
+
+.button {
+    position: absolute;
+    width: 10vh;
+    left:28vh;
+    top: 22vh;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  
+  .button a {
+    width: 200px;
+    padding: 10px 24px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+  }
+

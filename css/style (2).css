@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #003720;
+    /* background-color: rgb(255, 77, 77); */
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.banner-ul {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.banner-ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+.banner-ul li a:hover {
+    color: rgb(113, 113, 113);
+}
+
+.banner-ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+    position: relative;
+}
+
+.banner img {
+    /* z-index: 2; */
+    filter: brightness(1);
+    position: absolute;
+    top: 50%;
+    left: 94%;
+    transform: translateY(-50%);
+    height: 45px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* .banner .profilepic:hover img {
+    filter: brightness(0.1);
+} NOT WORKING RN*/
+
+.gen-home {
+    position: relative;
+    left: -5%;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    top: 60px;
+    height: 150px;
+    background-color: #e5e5e5;
+    /* background-color: rgb(255, 77, 77); */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    position: relative;
+    left: 6%;
+}
+
+.footer-logo a {
+
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    transition: 0.3s;
+}
+
+.grid-container {
+    position: relative;
+    right: 5%;
+    display: grid;
+    column-gap: 80px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+}
+
+.grid-item4 {
+    grid-column: 2;
+}
+
+.grid-container a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    transition: 0.3s;
+}
+
+.grid-container a:hover {
+    color: rgb(113, 113, 113);
+}
+
+#para {
+    height: 760px;
+    background: #ffffff url(1.png) no-repeat;
+    overflow: hidden;
+}
+
+#bookclosed img {
+    cursor: pointer;
+    height: 40px;
+    transition: 0.2s;
+
+}
+
+#bookclosed img:hover {
+    height: 130px;
+    margin-left: -35%;
+    margin-top: -15%;
+    transform: (50%, 50%);
+}
+
+.book {
+    background-color: #ffffff;
+    width: 200px;
+    height: 300px;
+    perspective: 600px;
+    position: relative;
+}
+
+.book::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+    background-color: #3f564d;
+    transform-origin: center right;
+    transform: rotateY(180deg);
+    transition: 0.7s ease all;
+}
+
+.book:hover::before {
+    transform: rotateY(0deg);
+}
+
+.book .pg {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+/*///////////////////////////////////////////// BY SANDEEP AND SUVRAT^ ///////////////////////////////////////////////////////////////////////////////////////////*/
+/* .book .pg .pg1 {} */

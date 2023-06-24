@@ -1,0 +1,1111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #003720;
+    /* background-color: rgb(255, 77, 77); */
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.banner-ul {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.banner-ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+
+.banner-ul li a:hover {
+    color: rgb(113, 113, 113);
+}
+
+.banner-ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+    position: relative;
+}
+
+.banner img {
+    /* z-index: 2; */
+    filter: brightness(1);
+    position: absolute;
+    top: 50%;
+    left: 94%;
+    transform: translateY(-50%);
+    height: 45px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* .banner .profilepic:hover img {
+    filter: brightness(0.1);
+} NOT WORKING RN*/
+
+.gen-home {
+    position: relative;
+    left: -5%;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    top: 60px;
+    height: 150px;
+    background-color: #e5e5e5;
+    /* background-color: rgb(255, 77, 77); */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    position: relative;
+    left: 6%;
+}
+
+.footer-logo a {
+
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    transition: 0.3s;
+}
+
+.grid-container {
+    position: relative;
+    right: 5%;
+    display: grid;
+    column-gap: 80px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+}
+
+.grid-item4 {
+    grid-column: 2;
+}
+
+.grid-container a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    transition: 0.3s;
+}
+
+.grid-container a:hover {
+    color: rgb(113, 113, 113);
+}
+
+#para {
+    height: 760px;
+    background: #ffffff url(1.png) no-repeat;
+    overflow: hidden;
+}
+
+#bookclosed img {
+    cursor: pointer;
+    height: 40px;
+    transition: 0.2s;
+
+}
+
+#bookclosed img:hover {
+    height: 130px;
+    margin-left: -35%;
+    margin-top: -15%;
+    transform: (50%, 50%);
+}
+
+.book {
+    background-color: #ffffff;
+    width: 200px;
+    height: 300px;
+    perspective: 600px;
+    position: relative;
+}
+
+.book::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+    background-color: #3f564d;
+    transform-origin: center right;
+    transform: rotateY(180deg);
+    transition: 0.7s ease all;
+}
+
+.book:hover::before {
+    transform: rotateY(0deg);
+}
+
+.book .pg {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+/*community  starts */
+.communitybg { 
+    background-color: #ECECEC;
+}
+.headingcommunity{
+    font-family: 'Open Sans';
+    font-size: 40px;
+    font-weight: bold;
+    color: #003720;
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+.headingcommunity:hover{
+   text-decoration: solid;
+  }
+.description{
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #003720;
+    text-align: center;
+    position: relative;
+    top: 13vh;
+    text-shadow: #3f564d;
+    font-style: italic;
+    width: 180vh;
+    left : 13vh;
+}
+.container1{
+    position: relative;
+    top: 20vh;
+    left: 10vh;
+    width: 50vh;
+}
+.container1:hover{
+    transform: matrix(1.3, 0, 0.6, 1.3, 0, 0);
+    transition: 0.5s;
+    opacity: 0.5;
+ 
+  
+}
+.container2{
+    position: relative;
+    top: 35vh;
+    left: 30vh;
+    width: 50vh;
+}
+.container2:hover{
+    transform: matrix(1.3, 0, 0.6, 1.3, 0, 0);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.container3{
+    position: relative;
+    top: 50vh;
+    left: 50vh;
+    width: 50vh;
+}
+.container3:hover{
+    transform: matrix(1.3, 0, 0.6, 1.3, 0, 0);
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.shoppingcart{
+    position: relative;
+    top : 9vh;
+    right : 135vh;
+}
+.shoppingcart:hover{
+    transform: scale(1.6);
+    transition: 0.5s;
+    opacity: 0.5;
+    rotate: 180deg;
+}
+.selltag{
+    position: relative;
+    top : 24vh;
+    right : 78vh;
+}
+.selltag:hover{
+    transform: scale(1.6);
+    transition: 0.5s;
+    rotate: 90deg;
+
+    opacity: 0.5;
+}
+.recycle{
+    position: relative;
+    top : 39vh;
+    right : 19vh;
+}   
+.recycle:hover{
+    transform: scale(1.6);
+    transition: 0.5s;
+    opacity: 0.5;
+    rotate: 90deg;
+   
+}
+.carttext{
+    position: relative;
+    bottom:2vh;
+    left : 30vh;
+    width: 30vh;
+    font-family: 'Open Sans';
+    font-size: 23px;
+    color: #003720;
+    text-align: center;
+    text-shadow: #3f564d;
+}
+.carttext:hover{
+    text-decoration: solid;
+    color: #7eaf9c;
+}
+.selltext{
+    position: relative;
+    top: 3vh;
+    left : 100vh;
+    width: 30vh;
+    font-family: 'Open Sans';
+    font-size: 23px;
+    color: #003720;
+    text-align: center;
+    text-shadow: #3f564d;
+}
+.selltext:hover{
+    text-decoration: solid;
+    color: #7eaf9c;
+}
+.recycletext{
+    position: relative;
+    top: 7vh;
+    left : 173vh;
+    width: 25vh;
+    font-family: 'Open Sans';
+    font-size: 23px;
+    color: #003720;
+    text-align: center;
+    text-shadow: #3f564d;
+}
+.recycletext:hover{
+    text-decoration: solid;
+    color: #7eaf9c;
+}
+.headingrecycle{
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color: #003720;
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    
+}
+.descriptionrecycle{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #003720;
+    text-align: center;
+    position: relative;
+    top: 13vh;
+    text-shadow: #3f564d;
+    font-style: italic;
+    width: 180vh;
+    left : 13vh;
+}
+.recycle_container {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c:  rgb(66, 138, 78); /* the color */
+    
+    position: relative;
+    top: 9vh;
+    left: 5vh;
+    padding: calc(var(--g) + var(--b));
+    --_c: #00372000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .8s;
+  }
+  
+  .recycle_container:hover {
+    --_p: 75%;
+    transform: scale(1.2);
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+    font-family: 'Open Sans';
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    bottom: 24vh;
+    left: 76vh;
+    border-radius: 10vh;
+    
+  }
+  
+  /* Style the form icons */
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    top: 40vh;
+  }
+  
+  /* Style the input fields */
+  .input-field {
+    font-family: 'Open Sans';
+    width: 27%;
+    padding: 10px;
+    outline: none;
+    right: 300vh;
+    border-radius: 10vh;
+  }
+  
+  /* Style the associated span element when input or textarea is focused or validated */
+  .input-field:focus ~ label,
+  .input-field:valid ~ label,
+  textarea:focus ~ label,
+  textarea:valid ~ label {
+    color: white;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  
+  .input-field:focus {
+    border: 2px solid rgb(32, 92, 4);
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    font-family: 'Open Sans';
+    background-color: rgb(66, 138, 78);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 21%;
+    opacity: 0.9;
+    position: relative;
+    bottom: 22vh;
+    left: 83vh;
+    border-radius: 10vh;
+    font-size: large;
+    
+  }
+  
+  .btn:hover {
+    opacity: 0.7;
+
+  }
+  /* Style inputs with type="text", select elements and textareas */
+    input[type=select], select, textarea {
+    width: 20%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #28523d; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    left: 4vh;
+    position: relative;
+    top : 2vh;
+    border-radius: 10vh;
+  }
+  
+  
+
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .price_range{
+    position: relative;
+    top: 3vh;
+    left: 2vh;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #003720;
+    text-align: center;
+  }
+    .price_range:hover{
+        text-decoration: solid;
+        color: #7eaf9c;
+    }
+.recycle_heading{
+    position: relative;
+    bottom: 72vh;
+    right :1vh;
+    font-family: 'Open Sans';
+    font-size: 23px;
+    font-weight: bold;
+    color: #003720;
+    text-align: center;
+}
+.recycle_heading:hover{
+        text-decoration: solid;
+        color: #7eaf9c;
+
+
+}
+/* Style the select input */
+select {
+    font-family: 'Open Sans';
+    width: 20%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #28523d; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    left: 4vh;
+    position: relative;
+    top: 2vh;
+    border-radius: 10vh;
+    appearance: none; /* Remove default appearance */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    font-size: 16px; /* Set font size */
+    font-weight: 400; /* Set font weight */
+  }
+  
+  /* Style the drop-down list */
+  select::-ms-expand {
+    display: none; /* Remove arrow on IE10 and IE11 */
+    border-radius: 10vh;
+
+  }
+  
+  select option {
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    font-size: 16px; /* Set font size */
+    font-weight: 400; /* Set font weight */
+    
+  }
+  
+  select:hover {
+    cursor: pointer; /* Change cursor on hover */
+    border: 1px solid #45a049; /* Change border color on hover */
+  }
+  
+  select:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 5px #45a049; /* Add box shadow on focus */
+    border: 1px solid #45a049; /* Change border color on focus */
+  }
+  
+  /* Change background color of selected option */
+  select option:checked {
+    background-color: #45a049; /* Set background color */
+    color: #fff; /* Set text color */
+  }
+  .book_container1{
+    position: relative;
+    top: 27vh;
+    left: 2vh;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #003720;
+    text-align: center;
+    rotate: 90deg; 
+}
+.book_container2{
+    position: relative;
+    top: 27vh;
+    right: 6vh;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #003720;
+    text-align: center;
+    rotate: 90deg; 
+}
+.book_container3{
+    position: relative;
+    bottom: 31vh;
+    left: 140vh;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #003720;
+    text-align: center;
+    rotate: 90deg; 
+}
+.book1{
+    position:relative;
+   border-radius: 2vh;
+    box-shadow: #333;
+    box-shadow: 0 0 10px #030303;
+}
+.book1:hover{
+    box-shadow: 0 0 5px #45a049;
+    
+}
+
+.main_container{
+    position: relative;
+    border-radius: 10vh;
+   
+    bottom : 109vh;
+    width: 37vh;
+    margin: 6% 0 0 36%;
+    right:56vh;
+}
+.overlay{
+    position: absolute;
+    bottom: 0.6vh;
+    left: 0;
+    right: 0;
+    background-color: #000000d2;
+    opacity: 0.5;
+    width: 41.5vh;
+    overflow: hidden;
+    height: 0;
+    border-radius: 2vh;
+    transition: .6s ease;
+}
+.main_container:hover .overlay{
+    opacity: 1;
+    height:74%;
+
+}
+.mazerunner{
+    color: #e5e5e5;
+    font-family: 'Roboto';   
+}
+
+.mazerunner_description{
+    color: #e5e5e5;
+    font-family: 'Open Sans';  
+    font-size: 16px; 
+}
+.mazerunner_price{
+    color: #90d693;
+    font-family: 'Open Sans';  
+    font-size: 16px; 
+
+}
+.mazerunner_buy {
+    font-family: 'Roboto';
+    background-color: #003720;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 3vh;
+    position: relative;
+    bottom : 107vh;
+    left: 30vh;
+    font-weight: bold;
+  }
+    .mazerunner_buy:hover{
+        background-color: #45a049;
+        opacity: 1;
+    }
+    .main_container2{
+        position: relative;
+        border-radius: 10vh;
+       
+        bottom : 193vh;
+        width: 37vh;
+        margin: 6% 0 0 36%;
+        left:13vh;
+    }
+    .overlay2{ 
+        position: absolute;
+        bottom: 0.6vh;
+        left: 0;
+        right: 0;
+        background-color: #000000d2;
+        opacity: 0.5;
+        width: 41.5vh;
+        overflow: hidden;
+        height: 0;
+        border-radius: 2vh;
+        transition: .6s ease;
+    }
+    .main_container2:hover .overlay2{
+        opacity: 1;
+        height:74%;
+    }
+    .lifeofpi{
+        color: #e5e5e5;
+        font-family: 'Roboto';   
+    }
+    .lifeofpi_description{
+        color: #e5e5e5;
+        font-family: 'Open Sans';  
+        font-size: 16px; 
+    }
+    .lifeofpi_price{
+        color: #90d693;
+        font-family: 'Open Sans';  
+        font-size: 16px; 
+    
+    }
+    .book2{
+        position:relative;
+       border-radius: 2vh;
+        box-shadow: #333;
+        box-shadow: 0 0 10px #030303;
+        
+    }
+    .book2:hover{
+        box-shadow: 0 0 5px #45a049;
+        
+    }
+
+    .lifeofpi_buy{
+        font-family: 'Roboto';
+        background-color: #003720;
+        border: none;
+        color: white;
+        padding: 14px 30px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        border-radius: 3vh;
+        position: relative;
+        bottom : 191.5vh;
+        left: 100vh;
+        font-weight: bold;
+}
+.lifeofpi_buy:hover{
+    background-color: #45a049;
+    opacity: 1;
+}
+.main_container3{
+    position: relative;
+    border-radius: 10vh;
+   
+    bottom: 277vh;
+    width: 37vh;
+    margin: 6% 0 0 36%;
+    left:83vh;
+}
+.overlay3{
+    position: absolute;
+    bottom: 0.6vh;
+    left: 0;
+    right: 0;
+    background-color: #000000d2;
+    opacity: 0.5;
+    width: 41.5vh;
+    overflow: hidden;
+    height: 0;
+    border-radius: 2vh;
+    transition: .6s ease;
+}
+.main_container3:hover .overlay3{
+    opacity: 1;
+    height:74%;
+}
+.book3{
+    position:relative;
+   border-radius: 2vh;
+    box-shadow: #333;
+    box-shadow: 0 0 10px #030303;
+}
+.book3:hover{
+    box-shadow: 0 0 5px #45a049;
+    
+}
+.fightclub{
+    color: #e5e5e5;
+    font-family: 'Roboto';   
+}
+.fightclub_description{
+    color: #e5e5e5;
+    font-family: 'Open Sans';  
+    font-size: 16px; 
+}
+.fightclub_price{
+    color: #90d693;
+    font-family: 'Open Sans';  
+    font-size: 16px; 
+
+}
+.fightclub_buy{
+    font-family: 'Roboto';
+    background-color: #003720;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 3vh;
+    position: relative;
+    bottom : 276vh;
+    left: 170vh;
+    font-weight: bold;
+}
+.fightclub_buy:hover{
+    background-color: #45a049;
+    opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: "Roboto Mono";
+  }
+  
+  .dropdown-content {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    animation: fade-in .2s ease-out;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: "Open Sans";
+  }
+  
+  .dropdown:hover .dropdown-content {
+    visibility: visible;
+  }
+  
+  
+  .dropbtn {
+    background-color: #4caf4f00;
+    position: relative;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color .2s ease-out;
+    left: 42vh;
+    top: 0.1vh;
+    
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+   
+}
+  
+  .dropbtn:hover {
+    background-color: #3e8e4100;
+    color: gray;
+  }
+  
+  .dropdown-content .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: background-color .2s ease-out;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.help_clipart{
+    position: relative;
+    width: 220vh;
+    height: 55vh;
+    opacity: 0.8;
+}
+.help_clipart:hover{
+    opacity: 1;
+}
+.help_text{
+    position: relative;
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFDC8A;
+    bottom: 40vh;
+    left: 76vh;
+    
+}
+.below_helpclipart{
+    position: relative;
+    width: 220vh;
+    height: 55vh;
+    opacity: 1;
+    bottom: 20vh;
+    font-size: 30px;
+    left: 85vh;
+    font-family: 'Open Sans';
+    color: #003720;
+
+
+}
+.hlpimg1{
+    position: relative;
+    bottom:100vh;
+    
+}
+
+.image1 img{
+    position:absolute;
+    top:70vh;
+    left: 10vh;
+    width: 40vh;
+    
+    
+
+}
+.hlpimgtxt1{
+    position: relative;
+    top: 56vh;
+    left: 17vh;
+    width: 30vh;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #003720;
+    text-align: center;
+}
+.hlpimgtxt1:hover{
+    opacity: 0.7;
+    color: blue;
+}
+.image1:hover{
+    opacity: 0.7;
+}
+.image2 img{
+    position:absolute;
+    top:73vh;
+    left: 85vh;
+    width: 40vh;
+
+
+}
+.helpheading1{
+    position: relative;
+    top: 43vh;
+    right: 74vh;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #00372090;
+    text-align: center;
+}
+.helpheading2{
+    position: relative;
+    bottom: 24vh;
+   
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #00372090;
+    text-align: center;
+}
+.hlpimgtxt2{
+    position: relative;
+    bottom: 22vh;
+    left: 92vh;
+    width: 30vh;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #003720;
+    text-align: center;
+}
+.hlpimgtxt2:hover{
+    opacity: 0.7;
+    color: blue;
+}
+.image2:hover{
+    opacity: 0.7;
+}
+.image3 img{
+    position:absolute;
+    top:65vh;
+    left: 160vh;
+    width: 40vh;
+    opacity: 0.7;
+}
+.hlpimgtxt3{
+    position: relative;
+    bottom: 37vh;
+    left: 167vh;
+    width: 30vh;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #003720;
+    text-align: center;
+}
+.hlpimgtxt3:hover{
+    opacity: 0.7;
+    color: blue;
+}
+.image3:hover{
+    opacity: 0.7;
+
+}
+.helpheading3{
+    position: relative;
+    bottom: 38vh;
+    left: 75vh;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #00372090;
+    text-align: center;
+}
+.image4 img{
+    position:absolute;
+    top:125vh;
+    left: 49vh;
+    width: 40vh;
+    opacity: 0.7;
+}
+.hlpimgtxt4{
+    position: relative;
+    top:14vh;
+    left: 56vh;
+    width: 30vh;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #003720;
+    text-align: center;
+}
+.hlpimgtxt4:hover{
+    opacity: 0.7;
+    color: blue;
+}
+.image4:hover{
+    opacity: 0.7;
+}
+.helpheading4{
+    position: relative;
+    top: 12vh;
+    right : 34vh;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #00372090;
+    text-align: center;
+}
+.image5 img{
+    position:absolute;
+    top:125vh;
+    left: 124vh;
+    width: 40vh;
+    opacity: 0.7;
+}
+.hlpimgtxt5{
+    position: relative;
+    top: 3vh;
+    left: 131vh;
+    width: 30vh;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #003720;
+    text-align: center;
+}
+
+.image5:hover{
+    opacity: 0.7;
+}
+.helpheading5{
+    position: relative;
+    bottom: 11vh;
+    left: 40vh;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #00372090;
+    text-align: center;
+}
+.hlpimgtxt5:hover{
+    opacity: 0.7;
+    color: blue;
+}
+
+
+
+
+
+  

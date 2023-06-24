@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color:#ececec;
+    min-height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #003720;
+    /* background-color: rgb(255, 77, 77); */
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.banner-ul {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.banner-ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+.banner-ul li a:hover {
+    color: rgb(113, 113, 113);
+}
+
+.banner-ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 40px;
+    position: relative;
+}
+
+.banner img {
+    /* z-index: 2; */
+    filter: brightness(1);
+    position: absolute;
+    top: 50%;
+    left: 94%;
+    transform: translateY(-50%);
+    height: 45px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* .banner .profilepic:hover img {
+    filter: brightness(0.1);
+} NOT WORKING RN*/
+
+.gen-home {
+    position: relative;
+    left: -5%;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Roboto Mono";
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    transition: 0.3s;
+}
+
+.audiobook .toppicks .toppick{
+    font-size: 25px;
+}
+
+.audiobook .rect{
+    height: 150px;
+    width: 450px;
+    background: #d5e8c1;
+    border-radius: 15px;
+}
+
+.audiobook h2{
+    font-size: 20px;
+}
+.audiobook p{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.audiobook .infob1 h2{
+    font-size: 15px; 
+}
+
+.audiobook .infob1 p{
+    text-decoration: line-through;
+}
+
+.audiobook .listening h2{
+    font-size: 25px ;
+
+}
+
+.audiobook .BestSeller h2{
+    font-size: 25px;
+}
+
+.audiobook .books .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 4.75vh;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    width: 0;
+    height: 17vh;
+    transition: .5s ease;
+}
+
+.audiobook .container{
+    position: relative;
+    width: 50%;
+}
+
+.container:hover .overlay {
+    width: 16vh;
+    
+}
+
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
